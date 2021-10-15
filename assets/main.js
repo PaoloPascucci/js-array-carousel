@@ -34,7 +34,10 @@ for (let i = 0; i < items.length; i++) {
 }
 let counter = 0;
 
-const jumbo = `<img src="${items[counter]}">`
+const jumbo = `<img class="Imagine" src="${items[counter]}">
+    <h3 class="bot">${title[counter]}</h3>
+    <p class="sub">${text[counter]}</p> 
+`
 Selected.innerHTML = jumbo;
 
 arrowDown.addEventListener('click', function () {
@@ -42,7 +45,9 @@ arrowDown.addEventListener('click', function () {
     if (counter > items.length - 1) {
         counter = 0
     }
-    const jumbo = `<img src="${items[counter]}">`
+    const jumbo = `<img class="Imagine" src="${items[counter]}">
+        <h3 class="bot">${title[counter]}</h3>
+    <p class="sub">${text[counter]}</p> `
     Selected.innerHTML = jumbo;
 })
 arrowUp.addEventListener('click', function () {
@@ -50,6 +55,8 @@ arrowUp.addEventListener('click', function () {
         counter = items.length
     }
     --counter;
-    const jumbo = `<img src="${items[counter]}">`
+    const jumbo = `<img class="Imagine" src="${items[counter]}">
+        <h3 class="bot">${title[counter]}</h3>
+    <p class="sub">${text[counter]}</p> `
     Selected.innerHTML = jumbo;
 })
