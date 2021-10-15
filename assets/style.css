@@ -4,8 +4,45 @@
     padding: 0;
 }
 
+.debug .container {
+    height: 800px;
+}
+
+.debug .Dx {
+    background-color: crimson;
+}
+
+.debug .Sx {
+    background-color: palevioletred;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.Dx {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 150px;
+}
+
+.Sx {
+    width: 500px;
+    height: 300px;
+}
+
+div[class^="items_"] {
+    height: 60px;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #cccccc;
+    border-radius: 50%;
+    padding: 1rem;
 }
