@@ -12,7 +12,7 @@
     background-color: crimson;
 }
 
-.debug .Sx {
+.debug #Sx {
     background-color: palevioletred;
 }
 
@@ -22,27 +22,27 @@
     align-items: center;
 }
 
-.Dx {
+#Dx {
     display: flex;
     flex-direction: column;
     height: 300px;
     width: 150px;
 }
 
-.Sx {
+#Sx {
     width: 500px;
     height: 300px;
 }
 
-div[class^="items_"] {
-    height: 60px;
+.arrUp, .arrDw {
+    border-radius: 50%;
+    background-color: #cccccc;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: none;
 }
 
-a {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #cccccc;
-    border-radius: 50%;
-    padding: 1rem;
+.fas {
+    font-size: 20px;
+    color: black;
 }
