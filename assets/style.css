@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 800px;
 }
 
 #Dx {
@@ -34,37 +35,58 @@
     height: 300px;
 }
 
-.arrUp, .arrDw {
+.arrUp {
     border-radius: 50%;
     background-color: #cccccc;
     height: 1.5rem;
     width: 1.5rem;
     border: none;
+    position: relative;
+    bottom: 125px;
+    left: 250px;
+}
+
+.arrDw {
+    border-radius: 50%;
+    background-color: #cccccc;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: none;
+    position: relative;
+    top: 242px;
+    left: 250px;
 }
 
 .fas {
-    font-size: 20px;
+    margin-left: 3px;
+    font-size: 21px;
     color: black;
+    margin-top: 1px;
 }
 
 .bot {
     position: relative;
-    bottom: 1%;
-    left: 0;
-    z-index: -1;
-    color: black;
+    bottom: 32%;
+    left: 5px;
+    z-index: 1;
+    color: white;
 }
 
 .sub {
     position: relative;
-    bottom: 0;
-    left: 0;
+    bottom: 30%;
+    left: 5px;
+    font-size: small;
     z-index: 1;
-    color: black;
+    color: white;
 }
 
 .Imagine {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 417px;
+}
+
+.button {
+    position: absolute;
 }
